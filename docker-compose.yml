@@ -13,7 +13,6 @@ services:
       - ./wp:/var/www/html/
       - ./:/var/www/html/framework/
       - ./../larapress_core:/var/www/html/core/
-    working_dir: /var/www/html/framework
   db:
     image: mariadb:latest
     environment:
