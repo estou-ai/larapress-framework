@@ -7,3 +7,5 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
+
+WORKDIR /var/www/html/framework
