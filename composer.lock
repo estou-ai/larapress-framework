@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "143a467fa349f5cd4ce073e27ef4e802",
+    "content-hash": "7d089e3968cee5c0592ce79519253b1b",
     "packages": [
         {
             "name": "as247/wp-eloquent",
@@ -533,10 +533,16 @@
         {
             "name": "larapress/core",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/estou-ai/larapress-core.git",
+                "reference": "88c890add713bf33933d73e7f5af0dd1d4d4d718"
+            },
             "dist": {
-                "type": "path",
-                "url": "../core",
-                "reference": "7188c9dbeebbc7c72bcec22d718a979e801e66b5"
+                "type": "zip",
+                "url": "https://api.github.com/repos/estou-ai/larapress-core/zipball/88c890add713bf33933d73e7f5af0dd1d4d4d718",
+                "reference": "88c890add713bf33933d73e7f5af0dd1d4d4d718",
+                "shasum": ""
             },
             "require": {
                 "as247/wp-eloquent": "^2.1",
@@ -548,11 +554,20 @@
             "require-dev": {
                 "symfony/var-dumper": "^7.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Larapress\\": "src/"
-                }
+                },
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "archive": {
+                "exclude": [
+                    "stubs/*"
+                ]
             },
             "license": [
                 "MIT"
@@ -564,17 +579,18 @@
                     "role": "Developer"
                 }
             ],
-            "description": "This is my package payshop-sdk",
+            "description": "This is the core of larapress.",
             "homepage": "https://estou.ai",
             "keywords": [
                 "larapress",
                 "laravel",
                 "wordpress"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/estou-ai/larapress-core/tree/main",
+                "issues": "https://github.com/estou-ai/larapress-core/issues"
+            },
+            "time": "2026-11-09T09:34:16+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1522,7 +1538,7 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.11.0"
 }

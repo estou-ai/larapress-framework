@@ -17,11 +17,8 @@
   },
   "repositories": {
     "larapress_core": {
-      "type": "path",
-      "url": "../core",
-      "options": {
-        "symlink": true
-      }
+      "type": "vcs",
+      "url": "https://github.com/estou-ai/larapress-core.git"
     }
   }
 }
