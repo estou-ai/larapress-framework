@@ -1,6 +1,6 @@
 services:
   wordpress:
-    image: wordpress:latest
+    build: .
     platform: linux/amd64
     ports:
       - 80:80
